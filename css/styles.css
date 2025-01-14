@@ -1,0 +1,97 @@
+/* Configuração geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    background: black;
+    color: #fff;
+  }
+  
+  .stars-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+  }
+  
+  /* Contador */
+  #countdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2em;
+    color: #feda4a;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 10;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Botão Play/Pause */
+  #toggle-animation {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #feda4a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  #toggle-animation:hover {
+    background-color: #e5c536;
+  }
+  
+  /* Texto estilo Star Wars */
+  .star-wars {
+    perspective: 400px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .crawl {
+    font-size: 20px;
+    position: relative;
+    top: 100vh;
+    transform-origin: 50% 100%;
+    animation: crawl 20s linear infinite;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    color: #feda4a; /* Amarelo Star Wars */
+  }
+  
+  .title h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #feda4a; /* Amarelo Star Wars */
+  }
+  
+  .fade {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to top, black, transparent);
+    z-index: 1;
+  }
+  
+  /* Animação de rolagem */
+  @keyframes crawl {
+    0% {
+      top: 100vh;
+      transform: rotateX(20deg) translateZ(0);
+    }
+    100% {
+      top: -100vh;
+      transform: rotateX(20deg) translateZ(-300px);
+    }
+  }
+  
